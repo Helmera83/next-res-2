@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #3F51B5;
+  --highlight-color: #FF4081;
+  --sidebar-bg: #1C2533;
+  --text-light: #FFFFFF;
+  --text-dark: #333333;
+  --background: #F7F9FC;
+  --card-bg: #FFFFFF;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --primary-color: #7986CB;
+  --highlight-color: #FF80AB;
+  --sidebar-bg: #181818;
+  --text-light: #E0E0E0;
+  --text-dark: #B0BEC5;
+  --background: #121212;
+  --card-bg: #1E1E1E;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+

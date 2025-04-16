@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Amanda Helmer - Resume</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: "Open Sans", system-ui;
+            padding: 0;
+            background-color: gainsboro;
+        }
+
+        .container {
+            margin:auto;
+            padding: 10px;
+            background-color: whitesmoke;
+            border-radius: 8px;
+            width: 80vw;
+        }
+
+        .headerContent {
+            background-color: #1e3557;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .headerContent h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .headerContent p {
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        .nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            width: auto;
+            background-color: #fff;
+            margin: 50px 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+            color: #283593;
+        }
+
+        .job, .education {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .ctaWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact {
+            margin: 50px 10px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .ctaBtn {
+            padding: 12px 25px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .ctaBtn:hover {
+            background-color: #3949ab;
+        }
+
+        .certs, .skills {
+            margin: 50px 10px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .tag-cloud {
+            display: inline-block;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            background-color: #2196F3;
+            margin-top: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1e3557;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: auto;
+            height: auto;
+        }
+
+        .footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        /* Mobile-specific styles */
+        @media only screen and (max-width: 768px) {
+            body {
+                margin: 0;
+            }
+
+            .headerContent h1 {
+                font-size: 1.5rem; /* Reduce header size */
+            }
+
+            .headerContent p {
+                font-size: 0.9rem; /* Smaller subheading */
+            }
+
+            .nav li {
+                display: block; /* Stack navigation links */
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .section {
+                margin: 15px 5px; /* Reduce margin on smaller screens */
+                padding: 10px;
+            }
+
+            .ctaWrapper {
+                display: flex;
+                flex-direction: column; /* Stack buttons vertically */
+                justify-content: center;
+
+            }
+
+            .ctaBtn {
+                width: auto; /* Full width for buttons on mobile */
+                margin-bottom: 10px;
+
+            }
+            .certs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+
+
+            }
+            .skills {
+                justify-content: center;
+
+            }
+            .contact {
+                margin: 15px 5px; /* Reduce margins on mobile */
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem; /* Reduce section header size */
+            }
+
+            ul {
+                padding-left: 15px; /* Smaller padding for lists */
+            }
+
+            .job h3, .education h3 {
+                font-size: 1.2rem; /* Adjust job/education title size */
+            }
+
+            .footer {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+
+            .footer p {
+                font-size: 0.9rem; /* Smaller font size for footer */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <header class="headerContent">
+        <h1>Amanda Helmer</h1>
+        <p>Business Administrator | Project Manager</p>
+        <nav>
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <hr>
+        <p>I am a motivated Business Administration professional with 10+ years of customer service and project management experience. Currently pursuing a Bachelor of Science in Business Administration at Purdue University Global, I have a passion for analytical thinking and leadership.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <hr>
+        <div class="job">
+            <h3>Crisis Text Line | Counselor</h3>
+            <p><em>2023 - Present</em></p>
+            <ul>
+                <li>Provide crisis intervention to individuals in distress.</li>
+                <li>Assess crisis situations for immediate risk and develop safety plans.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Apex Social Group | Intern</h3>
+            <p><em> April 2023 - August 2023 </em></p>
+            <ul>
+                <li>Demonstrated design and copywriting skills.</li>
+                <li>Delivered on-time and on-budget initiatives to drive audience engagement.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Creative Content | Founder & Web Designer</h3>
+            <p><em> December 2021 - April 2023</em></p>
+            <ul>
+                <li>Designed and developed responsive websites using HTML, CSS, and JavaScript.</li>
+                <li>Developed client trust and maintained strong relationships.</li>
+                <li>Conducted user testing to gather feedback and improve website usability.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Sales Associate | GE Designs</h3>
+            <p><em>September 2017 - March 2020</em></p>
+            <ul>
+                <li> Provided exceptional customer service through various channels, including chat, phone, and email.</li>
+                <li>Maintained a comprehensive customer database by documenting daily interactions.</li>
+                <li>Identified customer needs and implemented solutions to improve customer satisfaction and drive sales.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <hr>
+        <div class="education">
+            <h3>Bachelor of Science in Business Administration | Project Management</h3>
+            <p>Purdue University Global | 2023-2026</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <hr>
+        <span class="tag-cloud">Data Analytics</span>
+        <span class="tag-cloud">ETL</span>
+        <span class="tag-cloud">Agile Project Management</span>
+        <span class="tag-cloud">Project Scoping And Planning</span>
+        <span class="tag-cloud">Stakeholder Management</span>
+        <span class="tag-cloud">Jira</span>
+        <span class="tag-cloud">Microsoft 365</span>
+        <span class="tag-cloud">Email Campaigns</span>
+        <span class="tag-cloud">Automation</span>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certs" class="certs">
+        <h2>Certifications</h2>
+        <hr>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="d7017e5b-af2b-4346-85c6-997574751d8a"
+             data-share-badge-host="https://www.credly.com">
+        </div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="2665a38f-c033-40a5-9b85-ccec67be5608"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="ba7c1481-58ee-411d-baaa-974b759411d1"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="e4f46593-3bf9-40e1-843b-cda83334ef03"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="55c14226-e165-4fb1-bbaf-c0586694eaab"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="ccf1c6a0-089c-480b-b532-8fc237975a37"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="e79471c1-3d53-4e55-93fd-e27b6ed614dc"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="c28e46d9-b03a-4c53-b24c-a07540a51205"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="b360e36e-751b-4e4e-99bc-68afc270433b"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270"
+             data-share-badge-id="bcbc89d2-fd38-4b1d-8925-61f7afac3219"
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script><!-- Add certification badges here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <hr>
+        <div>
+            <p>Email: <a href="mailto:ahelmer@mail.com">ahelmer@mail.com</a></p>
+            <p>Phone: <a href="tel:6692896969">(669) 289-6969</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="ctaWrapper">
+            <a class="ctaBtn" href="./resume.html" download>Download Resume</a>
+            <a class="ctaBtn" href="https://www.linkedin.com/in/helmera" target="_blank">Visit LinkedIn</a>
+        </div>
+        <p>© 2024 Amanda Helmer</p>
+    </footer>
+</div>
+
+</body>
+</html>
