@@ -1,0 +1,26 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px 18px;
+    border-radius: var(--radius);
+    border: 1px solid var(--sidebar-bg);
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
