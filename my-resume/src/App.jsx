@@ -39,7 +39,7 @@ function App() {
                 </div>
             )}
 
-            <main className="main-content">
+            <div className="main-content">
                 <section id="about"><About /></section>
                 <section id="experience"><Experience /></section>
                 <section id="skills"><Skills /></section>
@@ -49,7 +49,7 @@ function App() {
                 <div className="theme-toggle">
                     <ThemeToggle />
                 </div>
-            </main>
+            </div>
         </div>
     );
 }

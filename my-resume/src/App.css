@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #7e77b0;
-  --highlight-color: #7d72d7;
-  --sidebar-bg: #241d3b;
+  --primary-color: #3f51b5;
+  --highlight-color: #ff4081;
+  --sidebar-bg: #1c2533;
   --text-light: #ffffff;
   --text-dark: #333333;
   --background: #f7f9fc;
@@ -23,10 +23,7 @@ body {
 }
 
 .sidebar {
-  font-family: "Inter Semi Bold", sans-serif;
-  color: #7986CB;
   display: none;
-
 }
 
 @media (min-width: 769px) {
@@ -42,10 +39,11 @@ body {
     height: 100vh;
     overflow-y: auto;
     flex-direction: column;
-
+    box-shadow: var(--shadow);
+    z-index: 1000;
   }
 
-  
+
 }
 
 .sidebar-nav {
@@ -66,7 +64,7 @@ body {
 }
 
 .sidebar-nav a:hover {
-  background-color: rgb(67, 56, 176);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
   padding: 8px;
 }
@@ -151,12 +149,7 @@ body {
 
 
 .app-container {
-  display: flex;
   flex-direction: column;
-
-
-
-
 }
 
 /* Main Content */
@@ -237,7 +230,6 @@ body {
 
 /* Sections */
 .section {
-  width: 85%;
   background: var(--card-bg);
   padding: 30px;
   border-radius: var(--radius);
@@ -350,7 +342,7 @@ body {
     margin: 8px;
   }
 
-  
+
 
   .section {
     padding: 20px;
@@ -363,4 +355,13 @@ body {
   padding: 40px;
   overflow-y: auto;
   background-color: var(--background);
+}
+
+.section {
+  width: 85%;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
 }
