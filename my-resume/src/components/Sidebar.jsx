@@ -14,3 +14,4 @@ export default function Sidebar() {
         </div>
     );
 }
+export default Sidebar;
