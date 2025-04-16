@@ -29,11 +29,11 @@ function App() {
             {sidebarOpen && (
                 <div className="overlay overlay-menu">
                     <ul className="overlay-nav">
-                        <li><a href="#about" onClick={() => setSidebarOpen(false)}><Home size={18} /> About</a></li>
-                        <li><a href="#experience" onClick={() => setSidebarOpen(false)}><Briefcase size={18} /> Experience</a></li>
-                        <li><a href="#skills" onClick={() => setSidebarOpen(false)}><Star size={18} /> Skills</a></li>
-                        <li><a href="#projects" onClick={() => setSidebarOpen(false)}><Code size={18} /> Projects</a></li>
-                        <li><a href="#contact" onClick={() => setSidebarOpen(false)}><Mail size={18} /> Contact</a></li>
+                        <li><a href={"#about"} onClick={() => setSidebarOpen(false)}><Home size={18} /> About</a></li>
+                        <li><a href={"#experience"} onClick={() => setSidebarOpen(false)}><Briefcase size={18} /> Experience</a></li>
+                        <li><a href={"#skills"} onClick={() => setSidebarOpen(false)}><Star size={18} /> Skills</a></li>
+                        <li><a href={"#projects"} onClick={() => setSidebarOpen(false)}><Code size={18} /> Projects</a></li>
+                        <li><a href={"#contact"} onClick={() => setSidebarOpen(false)}><Mail size={18} /> Contact</a></li>
                     </ul>
                 </div>
             )}
