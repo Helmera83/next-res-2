@@ -260,21 +260,6 @@ body {
 }
 
 /* Call-to-Action Buttons */
-.ctaBtn {
-  padding: 14px 28px;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius);
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.ctaBtn:hover {
-  background-color: var(--highlight-color);
-}
 
 /* Certifications */
 .cert-badges {
