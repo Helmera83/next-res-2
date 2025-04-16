@@ -13,5 +13,3 @@ export default function Sidebar() {
             </ul>
         </div>
     );
-}
-export default Sidebar;
