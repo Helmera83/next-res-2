@@ -1,8 +1,8 @@
 :root {
   --primary-color: #3F51B5;
-  --highlight-color: #FF4081;
+  --highlight-color: #37277a;
   --sidebar-bg: #1C2533;
-  --text-light: #FFFFFF;
+  --text-light: #d7ece4;
   --text-dark: #333333;
   --background: #F7F9FC;
   --card-bg: #FFFFFF;
@@ -13,11 +13,11 @@
 /* Dark mode variables */
 [data-theme="dark"] {
   --primary-color: #7986CB;
-  --highlight-color: #FF80AB;
+  --highlight-color: #652ec2;
   --sidebar-bg: #181818;
-  --text-light: #E0E0E0;
+  --text-light: #e0d8d8;
   --text-dark: #B0BEC5;
-  --background: #121212;
+  --background: rgba(6, 9, 12, 0.78);
   --card-bg: #1E1E1E;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }

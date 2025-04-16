@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #3f51b5;
-  --highlight-color: #ff4081;
-  --sidebar-bg: #1c2533;
+  --primary-color: #7e77b0;
+  --highlight-color: #7d72d7;
+  --sidebar-bg: #241d3b;
   --text-light: #ffffff;
   --text-dark: #333333;
   --background: #f7f9fc;
@@ -22,9 +22,11 @@ body {
   padding: 0;
 }
 
-/* App Layout */
 .sidebar {
+  font-family: "Inter Semi Bold", sans-serif;
+  color: #7986CB;
   display: none;
+
 }
 
 @media (min-width: 769px) {
@@ -40,14 +42,10 @@ body {
     height: 100vh;
     overflow-y: auto;
     flex-direction: column;
-    box-shadow: var(--shadow);
-    z-index: 1000;
+
   }
 
-  .main-content {
-    margin-left: 260px;
-    width: calc(100% - 260px);
-  }
+  
 }
 
 .sidebar-nav {
@@ -68,7 +66,7 @@ body {
 }
 
 .sidebar-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(67, 56, 176);
   border-radius: var(--radius);
   padding: 8px;
 }
@@ -150,24 +148,19 @@ body {
   }
 }
 
-.main-content {
-  margin-top: 0;
-  width: 100%;
-  padding: 20px;
-}
+
 
 .app-container {
+  display: flex;
   flex-direction: column;
+
+
+
+
 }
 
 /* Main Content */
-.main-content {
-  margin-left: 280px;
-  padding: 30px;
-  overflow-y: auto;
-  width: calc(100% - 260px);
-  background-color: var(--background);
-}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -244,6 +237,7 @@ body {
 
 /* Sections */
 .section {
+  width: 85%;
   background: var(--card-bg);
   padding: 30px;
   border-radius: var(--radius);
@@ -356,13 +350,17 @@ body {
     margin: 8px;
   }
 
-  .main-content {
-    margin-left: 0;
-    width: 100%;
-    padding: 20px;
-  }
+  
 
   .section {
     padding: 20px;
   }
+}
+
+.main-content {
+  margin-left: 300px;
+  width: calc(100% - 300px);
+  padding: 40px;
+  overflow-y: auto;
+  background-color: var(--background);
 }
