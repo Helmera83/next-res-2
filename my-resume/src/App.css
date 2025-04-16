@@ -162,6 +162,7 @@ body {
 
 /* Main Content */
 .main-content {
+  width: 85%;
   margin-left: 280px;
   padding: 30px;
   overflow-y: auto;
